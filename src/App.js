@@ -1,20 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import {useState} from 'react';
 function App() {
 
-  const [qoute,setQuote]=useState([
+  const qoute=[
     {text:'" Limitations live only in our minds. But if we use our imaginations, our possibilities become limitless.',author:'- Jamie Paolinetti',color:'green'},
     {text:"kaaaaaaa",author:'Ncib',color:'red'},
     {text:"houssem",author:'houssem',color:'black'}
-  ]);
+  ];
   let rand=Math.floor((Math.random() * qoute.length));;
   
   const [incr,setIncr]=useState(rand);
   
   const handleChange=()=>{
-    if(incr==qoute.length-1){
+    if(incr===qoute.length-1){
        setIncr(0);
     }else{
        setIncr(incr+1);
