@@ -24,11 +24,11 @@ function App() {
   return (
       <main className='container-fluid vh-100 d-flex flex-column justify-content-center align-items-center' style={{backgroundColor:qoute[incr].color,color:qoute[incr].color}}>
         <section id='quote-box' className="bg-light p-4 w-50">
-          <p id="text">{qoute[incr].text}</p>
+          <p id="text" className='py-1'>{qoute[incr].text}</p>
           <h3 id="author" className="text-end">{qoute[incr].author}</h3>
-          <div className="row ">
+          <div className="row mt-4">
             <div className="col">
-              <a href={tweetLink} target="_blank" rel="noreferrer" id="tweet-quote" className="btn text-white" style={{backgroundColor:qoute[incr].color}}>twitter</a>
+              <a href={tweetLink} target="_blank" rel="noreferrer" id="tweet-quote" className="btn text-white mx-1" style={{backgroundColor:qoute[incr].color}}>twitter</a>
               <a href="https://www.tumblr.com/explore/trending?source=homepage_explore" className="btn text-white" style={{backgroundColor:qoute[incr].color}}>tumblr</a>
             </div>
             <div className="col text-end" >
