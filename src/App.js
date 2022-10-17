@@ -29,7 +29,7 @@ function App() {
           <div className="row ">
             <div className="col">
               <a href={tweetLink} target="_blank" rel="noreferrer" id="tweet-quote" className="btn text-white" style={{backgroundColor:qoute[incr].color}}>twitter</a>
-              <a href="" className="btn text-white" style={{backgroundColor:qoute[incr].color}}>tumblr</a>
+              <a href="https://www.tumblr.com/explore/trending?source=homepage_explore" className="btn text-white" style={{backgroundColor:qoute[incr].color}}>tumblr</a>
             </div>
             <div className="col text-end" >
               <button id="new-quote" className="btn text-white" onClick={handleChange} style={{backgroundColor:qoute[incr].color}}>New quote</button>
