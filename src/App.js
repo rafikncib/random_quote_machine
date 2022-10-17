@@ -28,7 +28,7 @@ function App() {
           <h3 id="author" className="text-end">{qoute[incr].author}</h3>
           <div className="row ">
             <div className="col">
-              <a href={tweetLink} target="_blank" id="tweet-quote" className="btn text-white" style={{backgroundColor:qoute[incr].color}}>twitter</a>
+              <a href={tweetLink} target="_blank" rel="noreferrer" id="tweet-quote" className="btn text-white" style={{backgroundColor:qoute[incr].color}}>twitter</a>
               <a href="" className="btn text-white" style={{backgroundColor:qoute[incr].color}}>tumblr</a>
             </div>
             <div className="col text-end" >
